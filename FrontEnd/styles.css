@@ -1,0 +1,20 @@
+body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+.container { display: flex; height: 100vh; }
+.left-panel { flex: 2; padding: 20px; overflow-y: auto; background: #f5f5f5; }
+.right-panel { flex: 1; border-left: 1px solid #ddd; display: flex; flex-direction: column; }
+.panel { margin-bottom: 20px; }
+.hidden { display: none; }
+form label { display: block; margin-bottom: 10px; }
+form input { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+form button { padding: 10px 20px; }
+#plan-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.plan-day { border: 1px solid #ccc; padding: 10px; border-radius: 4px; background: #fff; }
+.chat-window { flex: 1; padding: 10px; overflow-y: auto; background: #fafafa; }
+.chat-input { display: flex; border-top: 1px solid #ddd; }
+.chat-input input { flex: 1; padding: 10px; border: none; }
+.chat-input button { padding: 10px 20px; border: none; background: #007bff; color: #fff; }
+.chat-message.user { text-align: right; }
+.chat-message.bot { text-align: left; }
+.chat-message span { display: inline-block; padding: 6px 10px; border-radius: 16px; margin: 4px 0; }
+.chat-message.user span { background: #007bff; color: #fff; }
+.chat-message.bot span { background: #e1e1e1; color: #333; }

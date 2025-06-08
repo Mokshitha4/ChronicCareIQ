@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChronicCareIQ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div id="survey-form" class="panel">
+        <h2>Setup Your Plan</h2>
+        <form id="form">
+          <label>Condition:<input id="condition" type="text" required></label>
+          <label>Dietary Preferences:<input id="dietaryPrefs" type="text"></label>
+          <label>Exercise Preferences:<input id="exercisePrefs" type="text"></label>
+          <label>Busy Days (e.g. 3,7):<input id="busyDays" type="text"></label>
+          <button type="submit">Generate Plan</button>
+        </form>
+      </div>
+      <div id="plan-grid" class="panel hidden"></div>
+    </div>
+    <div class="right-panel panel">
+      <h2>Chat</h2>
+      <div id="chat-window" class="chat-window"></div>
+      <div class="chat-input">
+        <input id="chat-input" type="text" placeholder="Type a message...">
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
